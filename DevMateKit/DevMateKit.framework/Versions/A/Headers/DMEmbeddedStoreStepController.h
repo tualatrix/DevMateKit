@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DMEmbeddedStoreStepController : DMStepController
 
-@property (nonatomic, assign, nullable) IBOutlet WebView *storeWebView;
 @property (nonatomic, assign, nullable) IBOutlet NSProgressIndicator *loadingProgressIndicator;
 @property (nonatomic, retain, nullable) IBOutlet NSButton *secureSessionButton;
 

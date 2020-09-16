@@ -357,14 +357,6 @@ typedef void (^DMCompletionHandler)(DMActivationProcessResult result);
  */
 - (void)activationController:(DMActivationController *)controller didLoadNativeFsprgEmbeddedStorePage:(NSURL *)pageURL;
 
-/*! @brief Delegate methods that informs about cleared window web objects for concrete frame.
- *  @see -webView:didClearWindowObject:forFrame:
- *  @param controller Activation controller.
- *  @param windowObject The cleared JavaScript window object.
- *  @param frame The frame containing the JavaScript window object.
- */
-- (void)activationController:(DMActivationController *)controller didClearNativeFsprgEmbededStoreWindowObject:(WebScriptObject *)windowObject forFrame:(WebFrame *)frame;
-
 /*! @brief Should be implemented by delegate in case when need to correct menu items for web element.
  *  @see -webView:contextMenuItemsForElement:defaultMenuItems:
  *  @param controller Activation controller.
